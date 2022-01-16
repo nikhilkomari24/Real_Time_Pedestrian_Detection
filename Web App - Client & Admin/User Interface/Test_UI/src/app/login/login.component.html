@@ -1,0 +1,31 @@
+<div style="display: block;margin-top: 0px;">
+    <img style = "margin-top: 10px;margin-left: 45px;"src="assets\bsd university logo.jpg" alt="Western University" height="70px" width="83%">
+  </div>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title style="text-align: center;">Login</mat-card-title>
+      </mat-card-header>
+   
+    <form class="example-form">
+    <mat-card-content>
+    <mat-form-field class="example-full-width">
+        <mat-label data-error="Required Field!">Username</mat-label>
+        <input class="validate" matInput [(ngModel)]="login.username" name = "first" placeholder="Username" required="required">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label data-error="Minimum 8 Characters Required">Password</mat-label>
+        <input class="validate" matInput [(ngModel)]="login.password" name = "pass" type="password" placeholder="Password" required="required" minlength="8">
+    </mat-form-field>
+  <button style="text-align: center;" class="btn btn-primary" (click)="loginUser()">Login</button>
+ <br>
+ <br>
+ <br>
+  <a routerLink="/register"><p>Didn't register yet? Click here to register</p></a>
+  
+</mat-card-content>
+
+</form>
+
+</mat-card>
+  </div>
